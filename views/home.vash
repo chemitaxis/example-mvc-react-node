@@ -1,0 +1,12 @@
+@html.extend('layout', function (it) {
+  @html.block('content', function (it) {
+    <h2>@it.title</h2>
+    <div class="app"></div>
+  })
+})
+
+
+
+<script src="@(it.static.root)/js/vendors.common.js@(it.static.suffix)"></script>
+<script src="@(it.static.root)/js/vendors.home.js@(it.static.suffix)"></script>
+<script src="@(it.static.root)/js/home.js@(it.static.suffix)"></script>
